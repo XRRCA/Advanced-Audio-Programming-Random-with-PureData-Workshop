@@ -1,0 +1,18 @@
+#N canvas 827 239 527 327 12;
+#X floatatom -2471 -63 5 0 0 0 empty - - 12;
+#X obj -2471 -36 mtof;
+#X obj -2471 -7 osc~;
+#X obj -2471 25 *~;
+#X obj -2594 -33 hv.vline~;
+#X msg -2592 -65 1 \, 0 200;
+#X obj -2592 -96 inlet trigger;
+#X obj -2466 -94 inlet midi_note;
+#X obj -2466 58 outlet~;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 8 0;
+#X connect 4 0 3 1;
+#X connect 5 0 4 0;
+#X connect 6 0 5 0;
+#X connect 7 0 0 0;
